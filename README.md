@@ -6,5 +6,22 @@
 1. Клонируйте репозиторий на свой локальный компьютер:
 
 ```bash
-git clone https://github.com/ваш_пользователь/ваш_репозиторий.git
+git clone https://github.com/imangalikobey/event-management
 
+2. Перейдите в каталог проекта
+
+```bash
+cd event-management
+
+3. Установите зависимости
+
+```bash
+pip install -r requirements.txt
+
+## Использование
+
+1. Запустите flask приложение
+```bash
+python app.py
+
+2. Перейдите в браузере по адресу 'http://127.0.0.1:5000/' для доступа к приложению.
