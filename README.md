@@ -12,16 +12,16 @@ git clone https://github.com/imangalikobey/event-management
 
 ```bash
 cd event-management
-
+```
 3. Установите зависимости
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## Использование
 
 1. Запустите flask приложение
 ```bash
 python app.py
-
+```
 2. Перейдите в браузере по адресу 'http://127.0.0.1:5000/' для доступа к приложению.
