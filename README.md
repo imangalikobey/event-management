@@ -6,7 +6,7 @@
 1. Клонируйте репозиторий на свой локальный компьютер:
 
 ```bash
-git clone https://github.com/imangalikobey/event-management
+git clone https://github.com/imangalikobey/event-management```
 
 2. Перейдите в каталог проекта
 
