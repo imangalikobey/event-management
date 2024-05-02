@@ -54,4 +54,4 @@ python app.py
 
 POV: закончил документацию полностью в 01:08:
 
-<img src="https://i.kym-cdn.com/entries/icons/original/000/036/023/bale-1.jpg" width="200" height="300">
+<img src="https://i.kym-cdn.com/entries/icons/original/000/036/023/bale-1.jpg" width="250" height="250">
