@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-
+import qrcode 
+from pathlib import Path
 app = Flask(__name__)
 
 
@@ -36,8 +37,22 @@ def register():
     if event and event['tickets_available'] >= tickets:
         # Обновляем количество доступных билетов
         event['tickets_available'] -= tickets
-        
+        user_info = f"Name: {name}, Email: {email}, ID: {id}, tickets: {tickets}"
+        # QR code в качестве билета
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=10,
+            border=4,
+        )
+        qr.add_data(user_info)
+        qr.make(fit=True)
+        img = qr.make_image(fill_color="black", back_color="white")
+        desktop_dir = Path.home() / "Desktop"
+        img_path = desktop_dir/ "ticket.png"
+        img.save(img_path)
         return redirect(url_for('index'))
+
     else:
         return "Недостаточно доступных билетов"
     
