@@ -52,4 +52,4 @@ python app.py
 Спасибо, за возможность участвовать в вашем отборе!! Это был незабываемый опыт в разработке веб-приложений(не то что я люблю кодить)  с интересной темой.
 
 POV: закончил документацию полностью в 01:08:
-![alt text](https://i.kym-cdn.com/entries/icons/original/000/017/588/reality.jpg)
+![alt text](https://i.kym-cdn.com/entries/icons/original/000/036/023/bale-1.jpg)
