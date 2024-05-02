@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали мероприятия</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <h1 class="text-center">Детали мероприятия</h1>
+        </div>
+    </header>
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ event.name }}</h2>
+                            <p class="card-text"><strong>Место проведения:</strong> {{ event.location }}</p>
+                            <p class="card-text"><strong>Дата и время:</strong> {{ event.date }}</p>
+                            <p class="card-text"><strong>Доступность билетов:</strong> {{ event.tickets_available }}</p>
+                            <a href="{{ url_for('register', event_id=event.id) }}" class="btn btn-primary">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <p class="text-center">&copy; 2024 Все права защищены</p>
+        </div>
+    </footer>
+</body>
+</html>
